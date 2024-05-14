@@ -7,7 +7,7 @@ find_package(Curses REQUIRED)
 
 if(Curses_FOUND)
     # Add executable
-    add_executable(game main.cpp)
+    add_executable(game main.cpp game_objects.cpp game_map.cpp)
 
     # Link ncurses library
     target_link_libraries(${PROJECT_NAME} ${CURSES_LIBRARIES})
